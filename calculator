@@ -1,0 +1,46 @@
+//A simple calculator writen in JS
+function stringToArray(input) {
+		var str = input;
+		var array0 = str.split("");
+}
+
+
+
+function calculator(array0) {
+		if (array[0] != "("){
+
+		};
+
+
+		else{
+		var instant0 = 0;var instant1 = 0;var instant2 = 0;
+		for{i = 0;i < array0.length;i++){   
+				instant0 = array[i];
+				if (instant0 = "("){
+				instant1++;
+				}
+
+				else if (instant0 =")"){
+				instant2++;
+				}
+
+				else{
+				;
+				}
+
+
+		}
+
+		var v1 = 0,v2 = 0;
+
+		var sum = array0.length;
+		var instant = 
+		v1 = calculator();
+		v2 = calculator();
+
+		};
+
+
+
+
+	
