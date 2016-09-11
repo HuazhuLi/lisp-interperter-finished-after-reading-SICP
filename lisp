@@ -24,3 +24,24 @@
 			]
 		)
 	)
+	
+#lang racket
+
+(define env0 '())
+
+(define ext-env
+	(lambda (x v env)
+		cons `(,x . ,v)env)))
+
+(define lookup 
+	lambda (x env)
+		(let ([p (assq x env)])
+			(cond
+				[(not p) #f]
+				[else (cdr p)]))))
+
+(struct Closure (f env))
+
+(define interp
+	(lambda (exp env)
+		(match exp
